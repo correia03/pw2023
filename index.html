@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lan="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    window.onload = () => {
+    const primaryColors = [
+      "bg-red-700",
+      "bg-orange-700",
+      "bg-yellow-700",
+      "bg-green-700",
+      "bg-blue-700",
+      "bg-purple-700",
+    ];
+    const secondaryColors = [
+      "bg-pink-700",
+      "bg-teal-700",
+      "bg-lime-700",
+      "bg-indigo-700",
+      "bg-fuchsia-700",
+      "bg-amber-700",
+    ];
+    const body = document.querySelector("body");
+    let currentColorIndex = 0;
+
+   setInterval(() => {
+      // Set the background color to the current color
+     body.className = primaryColors[currentColorIndex];
+
+    // After 2 seconds, change the background color to the next color in the primary colors array
+     setTimeout(() => {
+      currentColorIndex = (currentColorIndex + 1) % primaryColors.length;
+      body.style.transition = "background-color 5s ease";
+      body.className = primaryColors[currentColorIndex];
+      }, 5000);
+      }, 5000);
+    };
+    </script>
+    
+    <title>intrudução</title>
+  </head>
+  <body class=" ">
+    <nav class="bg-black fixed w-full">
+      <div class="max-w-auto mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <div>
+            <a href="#">
+              <img src="/imagens/giphy.gif" alt="gif" class="h-8" />
+            </a>
+          </div>
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-4">
+              <a
+                href="/index.html"
+                class="text-blue-300 hover:text-blue-500 hover:opaque-50 px-3 py-2 rounded-md text-sm font-medium"
+                >inicio</a
+              >
+              <a
+                href="/musica.html"
+                class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >musica</a
+              >
+              <a
+                href="/football.html"
+                class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >football</a
+              >
+              <a
+                href="hobbies.html"
+                class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >hobbies</a
+              >
+            </div>
+          </div>
+          <div>
+            <a href="#">
+              <img src="/imagens/giphy.gif" alt="gif" class="h-8" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="flex flex-col h-screen justify-center items-center text-center ">
+      <figure class="md:flex  rounded-xl p-8 md:p-0 h:bg-gray-300 " >
+        <img class="w-24 h-24 md:w-48 md:h-auto md:rounded-full mx-auto  border-grey-300 " src="/imagens/117781372_1082342292173000_1556267289228980318_n.jpg" alt="foto" width="384" height="512">
+        <div class="pt-6 md:p-8 text-center md:text-left space-y-1">
+            <p class="text-lg font-medium font-bold">
+              Trabalho nº1
+            </p>   
+            <p class="text-lg font-medium font-bold">
+              Luis Manuel Guimaraes Correia nº26617 ERSC-PW
+            </p >
+             <p>
+              Neste trabalho foi pedido que cria-se 3 paginas para apresentar em cada pagina um top 3 musicas series ect.. 
+              com isso foi criada uma navbar para me poder deslocar entre elas.
+            </p>
+    </div>
+  </body>
+</html>

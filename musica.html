@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lan="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      window.onload = function () {
+        var coresprimarias = [
+          "bg-red-700",
+          "bg-orange-700",
+          "bg-yellow-700",
+          "bg-green-700",
+          "bg-blue-700",
+          "bg-purple-700",
+        ];
+        var bg = document.querySelector("body");
+        var currentColorIndex = 0;
+
+        setInterval(function () {
+          // Set the background color to the current color
+          bg.className = coresprimarias[currentColorIndex];
+
+          // After 2 seconds, change the background color to the next color in the primary colors array
+          setTimeout(function () {
+            currentColorIndex = (currentColorIndex + 1) % coresprimarias.length;
+            bg.style.transition = "background-color 5s ease";
+            bg.className = coresprimarias[currentColorIndex];
+          }, 5000);
+        }, 5000);
+      };
+    </script>
+
+    <title>musicas</title>
+  </head>
+  <body>
+    <nav class="bg-black fixed w-full">
+      <div class="max-w-auto mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <div>
+            <a href="#">
+              <img src="/imagens/giphy.gif" alt="gif" class="h-8" />
+            </a>
+          </div>
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-4">
+              <a
+                href="/index.html"
+                class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >inicio</a
+              >
+              <a
+                herf="/musica.html"
+                class="text-blue-300 hover:text-blue-500 hover:opaque-50 px-3 py-2 rounded-md text-sm font-medium"
+                >musica</a
+              >
+              <a
+                href="/football.html"
+                class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >football</a
+              >
+              <a
+               href="/hobbies.html"
+                class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >hobbies</a
+              >
+            </div>
+          </div>
+          <div>
+            <a href="#">
+              <img src="/imagens/giphy.gif" alt="gif" class="h-8" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <p class="h-20"></p>
+    <div class="flex justify-center space-y-20 m-8">
+      <h1 class="font-bold text-black-300">artista que mais tenho ouvido:</h1>
+    </div>
+    <figure
+      class="flex justify-initial border-grey-100 rounded-xl h-48 w-100 border-4 mx-44"
+      style="background: #ffffff63"
+    >
+      <img
+        class="w-48 h-auto rounded flex justify-initial"
+        src="/imagens/bispo.jpg"
+        alt="bispo"
+      />
+      <div class="pt-6 md:p-8 text-center md:text-left space-y-1">
+        <p class="text-lg font-medium font-bold">Bispo</p>
+          Pedro Bispo, conhecido como Bispo, é um rapper português conta com
+          muitas musicas como "lembra-te", "lembrei-me" "nós2", "essa saia" entre outras.
+          para ouvires outras musicas dele no spotify: 
+          <a href="https://open.spotify.com/artist/3LZCMaZWwvhYyQeEfWgVdY?autoplay=true"><img class="rounded-full h-10 w-10 flex"  src="/imagens/spotify.jpg" /></a>
+          
+        </p>
+      </div>
+    </figure>
+    <p class="h-20"></p>
+    <div class="flex justify-center space-y-20 m-8">
+      <h1 class="font-bold text-black-300">banda rock favorita:</h1>
+    </div>
+    <figure
+      class="flex justify-initial border-grey-100 rounded-xl h-48 w-100 border-4 mx-44"
+      style="background: #ffffff63"
+    >
+      <img
+        class="w-48 h-auto rounded flex justify-initial"
+        src="/imagens/queen.jpg"
+        alt="queen"
+      />
+      <div class="pt-6 md:p-8 text-center md:text-left space-y-1">
+        <p class="text-lg font-medium font-bold">queen</p>
+        Queen foi uma banda britânica de rock, fundada em 1970 e ativa, sob sua formação clássica, até 1991. O grupo, formado por Brian May, Freddie Mercury, John Deacon e Roger Taylor é frequentemente citado como um dos expoentes do seu estilo, também sendo um dos recordistas de vendas de discos a nível mundial.
+        todas as musicas da banda no spotify:
+          <a href="https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d"><img class="rounded-full h-10 w-10 flex"  src="/imagens/spotify.jpg" /></a>
+          
+        </p>
+      </div>
+    </figure>
+    <p class="h-20"></p>
+    <div class="flex justify-center space-y-20 m-8">
+      <h1 class="font-bold text-black-300">musica favorita dos queen:</h1>
+    </div>
+    <figure
+      class="flex justify-initial border-grey-100 rounded-xl h-48 w-100 border-4 mx-44"
+      style="background: #ffffff63"
+    >
+      <img
+        class="w-48 h-auto rounded flex justify-initial"
+        src="/imagens/show.jpg"
+        alt="show must go on"
+      />
+      <div class="pt-6 md:p-8 text-center md:text-left space-y-1">
+        <p class="text-lg font-medium font-bold">show must go on</p>
+          show must go on é uma das ultimas musicas produzidas pela banda queen, esta musica na altura que foi produzida foi para mostrar
+          aos fans que mesmo que Fredie Mercury morre-se devido a doença terminal que ele teve que o show deveria continuar por isso é que foi produzida esta musica
+          sendo assim uma grande musica produzida pelos queen,
+          <a href="https://open.spotify.com/track/5n6RDaGFSN88oRWuGtYAIN?si=498c9de4335c4ac2"><img class="rounded-full h-10 w-10 flex"  src="/imagens/spotify.jpg" /></a>
+          
+        </p>
+      </div>
+    </figure>
+    <p class="h-10"></p>
+  </body>
+</html>

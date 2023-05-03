@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lan="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      window.onload = function () {
+        var coresprimarias = [
+          "bg-red-700",
+          "bg-orange-700",
+          "bg-yellow-700",
+          "bg-green-700",
+          "bg-blue-700",
+          "bg-purple-700",
+        ];
+        var bg = document.querySelector("body");
+        var currentColorIndex = 0;
+
+        setInterval(function () {
+          // Set the background color to the current color
+          bg.className = coresprimarias[currentColorIndex];
+
+          // After 2 seconds, change the background color to the next color in the primary colors array
+          setTimeout(function () {
+            currentColorIndex = (currentColorIndex + 1) % coresprimarias.length;
+            bg.style.transition = "background-color 5s ease";
+            bg.className = coresprimarias[currentColorIndex];
+          }, 5000);
+        }, 5000);
+      };
+    </script>
+
+    <title>hobbies</title>
+  </head>
+  <body>
+    <nav class="bg-black fixed w-full">
+      <div class="max-w-auto mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <div>
+            <a href="#">
+              <img src="/imagens/giphy.gif" alt="gif" class="h-8" />
+            </a>
+          </div>
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-4">
+              <a
+                href="/index.html"
+                class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >inicio</a
+              >
+              <a
+                href="/musica.html"
+                class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >musica</a
+              >
+              <a
+                href="/football.html"
+                class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >football</a
+              >
+              <a
+                href="/hobbies.html"
+                class="text-blue-300 hover:text-blue-500 hover:opaque-50 px-3 py-2 rounded-md text-sm font-medium"
+                >hobbies</a
+              >
+            </div>
+          </div>
+          <div>
+            <a href="#">
+              <img src="/imagens/giphy.gif" alt="gif" class="h-8" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <p class="h-20"></p>
+    <div class="flex justify-center space-y-20 m-8">
+      <h1 class="font-bold text-black-300">desporto que pratico</h1>
+    </div>
+    <figure
+      class="flex justify-initial border-grey-100 rounded-xl h-48 w-100 border-4 mx-44"
+      style="background: #ffffff63"
+    >
+      <img
+        class="w-48 h-auto rounded flex justify-initial"
+        src="/imagens/poloaquatico.jpg"
+        alt="poloaquatico"
+      />
+      <div class="pt-6 md:p-8 text-center md:text-left space-y-1">
+        <p class="text-lg font-medium font-bold">polo aquatico</p>
+        é um desporto exigente 7 jogadores 6 em campo 1 guarda-redes 30 segundos de ataque piscina de 25 ou 30 metros sem pé ambos os que atacam tambem defendem são 4 partes com 8 mninutos cada e só se pode agarrar a bola com uma mão eu andei no cdup.
+          
+        </p>
+      </div>
+    </figure>
+    <p class="h-20"></p>
+    <div class="flex justify-center space-y-20 m-8">
+      <h1 class="font-bold text-black-300">eu e os jogos</h1>
+    </div>
+    <figure
+      class="flex justify-initial border-grey-100 rounded-xl h-48 w-100 border-4 mx-44"
+      style="background: #ffffff63"
+    >
+      <img
+        class="w-48 h-auto rounded flex justify-initial"
+        src="/imagens/games.jpg"
+        alt="games"
+      />
+      <div class="pt-6 md:p-8 text-center md:text-left space-y-1">
+        <p class="text-lg font-medium font-bold">jogos de pc e consola</p>
+        a minha primeira interação com jogos começa desde pequeno que me foi oferecido uma playstation 2 com 3 anos de idade então desde ai jogo jogos, ultimamente tenho jogado para descontrair como por exemplo call of duty modernwarfare 2 de  vez em quando league of legends csgo entre outros.    
+        </p>
+      </div>
+    </figure>
+    <p class="h-20"></p>
+    <div class="flex justify-center space-y-20 m-8">
+      <h1 class="font-bold text-black-300">passar tempo ao ar livre</h1>
+    </div>
+    <figure
+      class="flex justify-initial border-grey-100 rounded-xl h-48 w-100 border-4 mx-44"
+      style="background: #ffffff63"
+    >
+      <img
+        class="w-48 h-auto rounded flex justify-initial"
+        src="/imagens/vistaaldeia.jpg"
+        alt="vista da aldeia"
+      />
+      <div class="pt-6 md:p-8 text-center md:text-left space-y-1">
+        <p class="text-lg font-medium font-bold">vide,trás-montes</p>
+          quando me quero abstrair da faculdade costumo ir para a minha aldeia que fica no conselho de torre de moncorvo,trás-montes bragança numa aldeia chamada vide, lá é uma zona muito pacifica a minha familia detem de alguns terrenos lá
+          e quando preciso de um tempo para mim é um local onde gosto de estar.
+        </p>
+      </div>
+    </figure>
+    <p class="h-10"></p>
+  </body>
+</html>
